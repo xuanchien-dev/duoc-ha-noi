@@ -320,69 +320,7 @@ $(".bar-collapse ul li a").click(function () {
 });
 
 
-// Bind to scroll
-var anchor_offset = $("h2[id*='section']").offset().top;
-$(window).scroll(function () {
-    // Get container scroll position
-    // var fromTop = $(this).scrollTop() + topMenuHeight;
 
-    if ($(window).innerWidth() <= 992) {
-        var fromTop = $(this).scrollTop() + 180;
-    } else {
-        var fromTop = $(this).scrollTop() + 70;
-    }
-    if ($(window).innerWidth() > 768) {
-        $("body").css({ 'overflow-x': 'unset' });
-    }
-
-    // console.log(fromTop);
-    // Get id of current scroll item
-    var cur = scrollItems.map(function () {
-        if ($(this).offset().top < fromTop)
-            return this;
-    });
-    // remove active heading
-    var eleHeading = $("h2[id*='section']");
-    // eleHeading.removeClass('active');
-    $(".bar-dropdown").removeClass('show-bar');
-
-
-    // Get the id of the current element
-    cur = cur[cur.length - 1];
-
-    var id = cur && cur.length ? cur[0].id : "";
-
-    if ($(window).scrollTop() > anchor_offset) {
-        eleHeading.removeClass('active');
-        $("#" + cur[0].id).addClass('active');
-
-        // set text in section current
-        var getText = menuItems.filter("[href='#" + id + "']").text();
-        $(".bar-control .text").text(getText);
-
-        // set active for bar snap
-        $(barMenu).removeClass('active');
-        $(barMenu).filter("[href='#" + id + "']").addClass('active');
-
-    } else {
-        eleHeading.removeClass('active');
-    }
-    if (eleHeading.hasClass("active")) {
-        $(".bar-dropdown").addClass('show-bar');
-        $(".overlay-bar").removeClass('show-o');
-    }
-    else
-        $(".bar-dropdown").removeClass('show-bar');
-
-    // var id = cur && cur.length ? cur[0].id : "";
-    if (lastId !== id) {
-        lastId = id;
-        // Set/remove active class
-        menuItems
-            .parent().removeClass("current")
-            .end().filter("[href='#" + id + "']").parent().addClass("current");
-    }
-});
 
 
 // drop in bai viet (nguon kham khao)

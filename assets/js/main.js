@@ -34,7 +34,7 @@
             smartSpeed: 800,
             speed: 3000,
             center: true,
-            margin:20,
+            margin:15,
             dots: true,
             responsive: {
                 0: {
@@ -57,7 +57,7 @@
             smartSpeed: 800,
             speed: 3000,
             center: true,
-            margin:20,
+            margin:15,
             dots: true,
             responsive: {
                 0: {

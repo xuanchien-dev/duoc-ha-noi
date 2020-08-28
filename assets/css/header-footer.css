@@ -2,6 +2,12 @@
 
 
 /*css-menu1*/
+.no-bd {
+    border-top: none !important;
+}
+.bd-bt{
+    border-bottom: 1px solid #ffffff29 !important;
+}
 .link-static__item .view-more a{
     margin-left: 30px;
 }
@@ -482,7 +488,7 @@
     line-height: initial;
 }
 .c-dropdown.is-open .c-button:after {
-    background: url(../../images/icon/angle-arrow-down.png) no-repeat;
+    background: url(../../images/angle-arrow-down.png) no-repeat;
     background-size: cover;
 }
 .c-dropdown .c-button {
@@ -497,7 +503,7 @@
     top: 50%;
     width: 13px;
     height: 13px;
-    background: url(../../images/icon/down-arrow.png) no-repeat;
+    background: url(../../images/down-arrow.png) no-repeat;
     background-size: cover;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -1532,7 +1538,7 @@ main .ss-thuoc-detail .container .product .padd .r2 .col-sm-8 .detail table tbod
 .main-header .w3-mau .home {
     font-size: 16px;
     color: #fff;
-    border-bottom: 1px solid #ffffff29;
+    border-top: 1px solid #ffffff29;
 }
 .main-header .w3-mau #demoAcc1 button.w3-button.w3-block.w3-left-align a:focus,
 .main-header .w3-mau #demoAcc1 button.w3-button.w3-block.w3-left-align a:hover,

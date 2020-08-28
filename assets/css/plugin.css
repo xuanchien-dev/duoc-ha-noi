@@ -16688,63 +16688,7 @@ img {
         height: 170px;
     }
 }
-@media (max-width: 769px) {
-    .home-banner {
-        margin-bottom: 10px;
-    }
-    .home-banner .container {
-        padding: 0;
-    }
-    .home-banner-item {
-        padding: 38px 0 188px;
-        background: url(../images/bg-bnner-mb.html) no-repeat center bottom;
-        background-size: cover;
-        min-height: 718px;
-    }
-    .home-banner-box {
-        flex-flow: row wrap;
-        justify-content: center;
-        padding-right: 0;
-    }
-    .home-banner-box .box-item {
-        flex: unset;
-        margin-bottom: 15px;
-    }
-    .home-banner-box .box-item:not(:last-child) {
-        margin-right: 0;
-    }
-    .home-banner-box .box-item:last-child {
-        flex: 1 100%;
-    }
-    .home-banner-box .box-item:last-child .box-item-inner {
-        margin: auto;
-    }
-    .home-banner-box .box-item:first-child {
-        margin-right: 15px;
-    }
-    .home-banner-box .box-item-img img {
-        width: 135px;
-        height: 177px;
-    }
-    .home-banner-box .box-item-txt {
-        left: 0;
-    }
-    .home-banner-desc-mb > * {
-        color: var(--color-white);
-        line-height: normal;
-    }
-    .home-banner-desc-mb .mess {
-        font-size: 22px;
-        font-weight: 400;
-    }
-    .home-banner-desc-mb .cap {
-        max-width: 246px;
-        margin: auto;
-        font-size: 32px;
-        font-weight: 700;
-        letter-spacing: 0.66px;
-    }
-}
+
 @media (max-width: 576px) {
     .home-banner-item {
         min-height: unset;
