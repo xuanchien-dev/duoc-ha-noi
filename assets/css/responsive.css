@@ -332,7 +332,7 @@
     .wrapper-main-index .box-product-1 .container {
         padding: 0px;
     }
-    .box-product-top h2{
+    .box-product-top h2,.row-pr1 h2{
         font-size: 24px;
     }
     .b-left,.b-center, .b-right{
@@ -342,6 +342,29 @@
     .b-left a{
         width: 85%;
     }
+    .wrapper-main-benh .ss-view-body .row,
+    .wrapper-main-benh .ss-benh-thuong-gap .row-pr2,
+    .wrapper-main-benh .ss-group-benh .row-pr1,
+    .wrapper-main-benh .ss-benh-thuong-gap .row-pr1,
+    .ss-group-benh .container.ss-benh2 .row,.ft-benh .row{
+         margin: 0px;
+    }
+    .ss-banner .col-sm-3 img{
+        position: inherit;
+    }
+    .box-benh img{
+        margin: 0 auto;
+    }
+    .box-benh.b1 p {
+        right: 40%;
+    }
+    .box-benh.b2 p {
+        right: 35%;
+    }
+    .box-benh.b3 p {
+        right: 25%;
+    }
+
   
    
 }

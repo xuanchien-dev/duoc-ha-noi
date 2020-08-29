@@ -549,17 +549,38 @@
 
 /*3-cs-benh*/
 
+.box-all-benh.xanh1 ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f7f7f7;
+}
+.box-all-benh.xanh1 ::-webkit-scrollbar-thumb {
+    background: #25c1e5;
+}
+.box-all-benh.xanh2 ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f7f7f7;
+}
+.box-all-benh.xanh2 ::-webkit-scrollbar-thumb {
+    background: #065ac0;
+}
 .box-all-benh.vang ::-webkit-scrollbar {
     width: 8px;
-    background-color: #25c1e5;
+    background-color: #f7f7f7;
 }
 .box-all-benh.vang ::-webkit-scrollbar-thumb {
     background: #ffa80c;
 }
-.box-all-benh.vang .title.active{
+
+.box-all-benh.xanh1 .title.active{
     background-color: #25C1E5!important;
 }
-.box-all-benh.vang .title.active h3{
+.box-all-benh.xanh2 .title.active{
+    background-color: #065AC0!important;
+}
+.box-all-benh.vang .title.active{
+    background-color: #FFA80C!important;
+}
+.box-all-benh .title.active h3{
     color: #fff !important;
 }
 main .ss-group-benh .ss-benh2 .tab2 .title h3{
@@ -939,6 +960,7 @@ main .ss-group-benh .ss-benh2 .tab2 .title {
     background-color: #f7f7f7;
     margin-bottom: 15px;
     margin-top: 15px;
+    border-radius: 5px;
 }
 main .ss-group-benh .ss-benh2 .tab2 .title h3 {
     font-size: 16px;
@@ -956,9 +978,7 @@ main .ss-group-benh .ss-benh2 .tab2 .title img {
     vertical-align: middle;
     margin-right: 15px;
 }
-main .ss-group-benh .ss-benh2 .tab2 .title.active-h3 {
-    border-bottom: 2px solid #f16700;
-}
+
 main .ss-group-benh .ss-benh2 .tab2 .tab-sub-item {
     width: 100%;
     height: auto;
@@ -1020,7 +1040,6 @@ main .ss-group-benh .ss-benh2 .tab2 .t3 {
 main .ss-group-benh .ss-benh2 .tab2 .active,
 main .ss-group-benh .ss-benh2 .tab2 .title.active {
     background: #f7f7f7;
-    border-bottom: 2px solid #25C1E5;
 }
 @media only screen and (max-width: 767px) {
     main .br-benh {
@@ -1076,8 +1095,8 @@ main .ss-group-benh .ss-benh2 .tab2 .title.active {
     }
     main .ss-view-body .container .row .body-content .tab-content {
         position: relative;
-        overflow: hidden;
-        padding: 15px 10px;
+        overflow: scroll;
+        padding: 5px 10px;
         border-radius: 4px;
         background: #fff;
     }
