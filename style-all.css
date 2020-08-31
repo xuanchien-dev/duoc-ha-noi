@@ -664,7 +664,7 @@ main .ss-view-body .body-content .tab-content.current::-webkit-scrollbar{
      -o-transform: rotate(270deg);
      -ms-transform: rotate(270deg);
      position: fixed;
-     bottom: 50px;
+     bottom: 30px;
      color: #0D3996;
      text-align: center;
      font-size: 30px;

@@ -42,7 +42,6 @@
     .row-flex .col-5 {
         flex: 0 50%;
         margin-right: 0 !important;
-        padding: 10px;
         border-top: none;
         margin-bottom: 0;
         border-radius: 0;
@@ -363,6 +362,15 @@
     }
     .box-benh.b3 p {
         right: 25%;
+    }
+    .b-right {
+        padding: 20px 15px;
+    }
+    .time-update .plugin-fa{
+        margin-right: 0;
+    }
+    .wrapper-main-index .col-xs-12.col-sm-12.col-md-12.col-lg-12.text-center.mb-70.mt-10,.box-health .owl-dots{
+        margin-bottom: 30px;
     }
 
   

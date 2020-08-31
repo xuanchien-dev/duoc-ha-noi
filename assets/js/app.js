@@ -16403,151 +16403,151 @@ function dropdown() {
             });
         };
     }),
-    $(document).ready(function () {
-        $(".carousel").slick({ slidesToScroll: 1, autoplay: !0, arrows: !0 }),
-            $(".hidden1").click(function () {
-                $("#home").removeClass("fill"), $(".overlay").css({ display: "none" }), $(".hidden1").css({ display: "none" });
-            }),
-            $(".btn-bp a").click(function () {
-                var e = $(this).attr("data-tab"),
-                    t = $("#" + e);
-                if (($("a").removeClass("active"), $(this).addClass("active"), $(".tab-content").removeClass("current"), $("#" + e).addClass("current"), !($(window).innerWidth() <= 767))) return !1;
-                $(".btn-bp").addClass("wrapping"),
-                    $(".btn-main .xoa").addClass("delete"),
-                    $(".btn-main").addClass("them"),
-                    $(".btn-bp a ").removeClass("active1"),
-                    $(this).addClass("active1"),
-                    $(".body-content").fadeIn("them"),
-                    $(".body-content").css("display", "inline-table"),
-                    $(".ss-view-body h2 span").show(),
-                    t.children("a").length > 12 && $(t.children(".xemthem")).css("display", "block");
-                $(".xemthem").click(function () {
-                    var e = $(this).attr("data-tab");
-                    $("#" + e).addClass("full row"), $(this).fadeOut();
-                });
-                $(document).on("click", function (e) {
-                    $(e.target).closest(".tab-content").length || ($(".tab-content").removeClass("full row"), t.children("a").length > 12 && $(t.children(".xemthem")).fadeIn());
-                });
-            }),
-            $(".ss-view-body h2 span").click(function () {
-                $(".btn-main .xoa").removeClass("delete"), $(".btn-bp").removeClass("wrapping"), $(".btn-main").removeClass("them"), $(".btn-bp .nut-btn ").removeClass("active1 active"), $(".body-content").hide(), $(this).hide();
-            });
-        var e = $(".selected"),
-            t = $(".dropdown-list"),
-            i = $(".dropdown-list li");
-        e.click(function () {
-            t.toggleClass("active"),
-                t.hasClass("active") &&
-                    i.click(function () {
-                        i.hasClass("active") ? $(this).siblings().removeClass("active") : $(this).addClass("active"), t.removeClass("active"), e.children("span").html($(this).html());
-                    });
-        });
-        var s = $(".selected1"),
-            c = $(".dropdown-list1"),
-            a = $(".dropdown-list1 li");
-        return (
-            s.click(function () {
-                c.toggleClass("active"),
-                    c.hasClass("active") &&
-                        a.click(function () {
-                            a.hasClass("active") ? $(this).siblings().removeClass("active") : $(this).addClass("active"), c.removeClass("active"), s.children("span").html($(this).html());
-                        });
-            }),
-            $(".item li ").click(function () {
-                $("li").removeClass("active"), $(this).addClass("active");
-            }),
-            $(".nav-control li ").click(function () {
-                $("li").removeClass("active"), $(this).addClass("active");
-            }),
-            $(".pull-right .btn ").click(function () {
-                $(".btn").removeClass("active"), $(this).addClass("active");
-            }),
-            $(".pagination li a").click(function () {
-                $("a").removeClass("active"), $(this).addClass("active");
-            }),
-            $(".c-dropdown__list li").click(function () {
-                $(".c-dropdown__item").removeClass("active"), $(this).addClass("active");
-                var e = $(".c-dropdown__item.active").attr("data-dropdown-value"),
-                    t = $("#global-search");
-                switch (e) {
-                    case "thuoc":
-                        t.attr("placeholder", "Tìm kiếm thuốc...");
-                        break;
-                    case "thucphamchucnang":
-                        t.attr("placeholder", "Tìm kiếm thực phẩm chức năng...");
-                        break;
-                    case "thongtinbenhly":
-                        t.attr("placeholder", "Tìm kiếm thông tin bệnh lý...");
-                        break;
-                    case "gocsuckhoe":
-                        t.attr("placeholder", "Tìm kiếm góc sức khỏe...");
-                        break;
-                    case "duocmypham":
-                        t.attr("placeholder", "Tìm kiếm dược mỹ phẩm...");
-                        break;
-                    case "chamsoccanhan":
-                        t.attr("placeholder", "Tìm kiếm chăm sóc cá nhân...");
-                        break;
-                    default:
-                        t.attr("placeholder", "Tìm thuốc, thực phẩm chức năng, bệnh lý, mỹ phẩm...");
-                }
-            }),
-            $(".ss-group-benh .tab2 .title").click(function () {
-                var e = $(this).attr("data-tab");
-                $("#" + e)
-                    .children()
-                    .children();
-                return (
-                    $(".title").removeClass("active active-h3"),
-                    $(this).addClass("active"),
-                    $(".tab-sub-item").removeClass("current current-h3"),
-                    $("#" + e).toggleClass("current"),
-                    $(".ss-group-benh .tab2 .title h3").click && ($(this).addClass("active-h3"), $("h3").css("color", "#414141"), $(".tab-sub-item").removeClass("current-h3"), $("#" + e).addClass("current-h3")),
-                    $("html, body").animate({ scrollTop: $(this).offset().top - 70 }, "slow"),
-                    !1
-                );
-            }),
-            $(".dropdown button").click(function () {
-                $(this).children().toggleClass("rotated");
-            }),
-            (window.onclick = function (e) {
-                if (!e.target.matches(".title")) {
-                    var t,
-                        i = document.getElementsByClassName("tab-sub-item");
-                    for (t = 0; t < i.length; t++) {
-                        var s = i[t];
-                        s.classList.contains("current") && (s.classList.remove("current"), $(".title").removeClass("active"));
-                    }
-                }
-            }),
-            $("ul.tabs li").click(function () {
-                var e = $(this).attr("data-tab");
-                $("ul.tabs li").removeClass("active"), $(".tab-content-item").removeClass("current"), $(this).addClass("active"), $("#" + e).addClass("current");
-            }),
-            $("#list").click(function (e) {
-                e.preventDefault(), $(".prd").addClass("list-group-item");
-            }),
-            $("#grid").click(function (e) {
-                e.preventDefault(), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
-            }),
-            $(window).innerWidth() <= 767
-                ? ($("#list").click(function () {
-                      $(this).addClass("delete"), $(this).removeClass("active"), $("#grid").removeClass("delete"), $("#grid").addClass("active"), $(".prd").addClass("list-group-item"), $(".prd").removeClass("grid-group-item");
-                  }),
-                  $("#grid").click(function () {
-                      $(this).addClass("delete"), $(this).removeClass("active"), $("#list").removeClass("delete"), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
-                  }),
-                  $(window).innerWidth() <= 767 &&
-                      ($("#list1").click(function () {
-                          $(this).addClass("delete"), $(this).removeClass("active"), $("#grid1").removeClass("delete"), $("#grid1").addClass("active"), $(".prd").addClass("list-group-item"), $(".prd").removeClass("grid-group-item");
-                      }),
-                      $("#grid1").click(function () {
-                          $(this).addClass("delete"), $(this).removeClass("active"), $("#list1").removeClass("delete"), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
-                      }),
-                      void $(".wrapper-h").slick({ infinite: !0, autoplay: !0, dots: !0, speed: 2e3, slidesToShow: 2, slidesToScroll: 2 })))
-                : ($("body").css("overflow-x", "auto"), !1)
-        );
-    }),
+    // $(document).ready(function () {
+    //     $(".carousel").slick({ slidesToScroll: 1, autoplay: !0, arrows: !0 }),
+    //         $(".hidden1").click(function () {
+    //             $("#home").removeClass("fill"), $(".overlay").css({ display: "none" }), $(".hidden1").css({ display: "none" });
+    //         }),
+    //         $(".btn-bp a").click(function () {
+    //             var e = $(this).attr("data-tab"),
+    //                 t = $("#" + e);
+    //             if (($("a").removeClass("active"), $(this).addClass("active"), $(".tab-content").removeClass("current"), $("#" + e).addClass("current"), !($(window).innerWidth() <= 767))) return !1;
+    //             $(".btn-bp").addClass("wrapping"),
+    //                 $(".btn-main .xoa").addClass("delete"),
+    //                 $(".btn-main").addClass("them"),
+    //                 $(".btn-bp a ").removeClass("active1"),
+    //                 $(this).addClass("active1"),
+    //                 $(".body-content").fadeIn("them"),
+    //                 $(".body-content").css("display", "inline-table"),
+    //                 $(".ss-view-body h2 span").show(),
+    //                 t.children("a").length > 12 && $(t.children(".xemthem")).css("display", "block");
+    //             $(".xemthem").click(function () {
+    //                 var e = $(this).attr("data-tab");
+    //                 $("#" + e).addClass("full row"), $(this).fadeOut();
+    //             });
+    //             $(document).on("click", function (e) {
+    //                 $(e.target).closest(".tab-content").length || ($(".tab-content").removeClass("full row"), t.children("a").length > 12 && $(t.children(".xemthem")).fadeIn());
+    //             });
+    //         }),
+    //         $(".ss-view-body h2 span").click(function () {
+    //             $(".btn-main .xoa").removeClass("delete"), $(".btn-bp").removeClass("wrapping"), $(".btn-main").removeClass("them"), $(".btn-bp .nut-btn ").removeClass("active1 active"), $(".body-content").hide(), $(this).hide();
+    //         });
+    //     var e = $(".selected"),
+    //         t = $(".dropdown-list"),
+    //         i = $(".dropdown-list li");
+    //     e.click(function () {
+    //         t.toggleClass("active"),
+    //             t.hasClass("active") &&
+    //                 i.click(function () {
+    //                     i.hasClass("active") ? $(this).siblings().removeClass("active") : $(this).addClass("active"), t.removeClass("active"), e.children("span").html($(this).html());
+    //                 });
+    //     });
+    //     var s = $(".selected1"),
+    //         c = $(".dropdown-list1"),
+    //         a = $(".dropdown-list1 li");
+    //     return (
+    //         s.click(function () {
+    //             c.toggleClass("active"),
+    //                 c.hasClass("active") &&
+    //                     a.click(function () {
+    //                         a.hasClass("active") ? $(this).siblings().removeClass("active") : $(this).addClass("active"), c.removeClass("active"), s.children("span").html($(this).html());
+    //                     });
+    //         }),
+    //         $(".item li ").click(function () {
+    //             $("li").removeClass("active"), $(this).addClass("active");
+    //         }),
+    //         $(".nav-control li ").click(function () {
+    //             $("li").removeClass("active"), $(this).addClass("active");
+    //         }),
+    //         $(".pull-right .btn ").click(function () {
+    //             $(".btn").removeClass("active"), $(this).addClass("active");
+    //         }),
+    //         $(".pagination li a").click(function () {
+    //             $("a").removeClass("active"), $(this).addClass("active");
+    //         }),
+    //         $(".c-dropdown__list li").click(function () {
+    //             $(".c-dropdown__item").removeClass("active"), $(this).addClass("active");
+    //             var e = $(".c-dropdown__item.active").attr("data-dropdown-value"),
+    //                 t = $("#global-search");
+    //             switch (e) {
+    //                 case "thuoc":
+    //                     t.attr("placeholder", "Tìm kiếm thuốc...");
+    //                     break;
+    //                 case "thucphamchucnang":
+    //                     t.attr("placeholder", "Tìm kiếm thực phẩm chức năng...");
+    //                     break;
+    //                 case "thongtinbenhly":
+    //                     t.attr("placeholder", "Tìm kiếm thông tin bệnh lý...");
+    //                     break;
+    //                 case "gocsuckhoe":
+    //                     t.attr("placeholder", "Tìm kiếm góc sức khỏe...");
+    //                     break;
+    //                 case "duocmypham":
+    //                     t.attr("placeholder", "Tìm kiếm dược mỹ phẩm...");
+    //                     break;
+    //                 case "chamsoccanhan":
+    //                     t.attr("placeholder", "Tìm kiếm chăm sóc cá nhân...");
+    //                     break;
+    //                 default:
+    //                     t.attr("placeholder", "Tìm thuốc, thực phẩm chức năng, bệnh lý, mỹ phẩm...");
+    //             }
+    //         }),
+    //         $(".ss-group-benh .tab2 .title").click(function () {
+    //             var e = $(this).attr("data-tab");
+    //             $("#" + e)
+    //                 .children()
+    //                 .children();
+    //             return (
+    //                 $(".title").removeClass("active active-h3"),
+    //                 $(this).addClass("active"),
+    //                 $(".tab-sub-item").removeClass("current current-h3"),
+    //                 $("#" + e).toggleClass("current"),
+    //                 $(".ss-group-benh .tab2 .title h3").click && ($(this).addClass("active-h3"), $("h3").css("color", "#414141"), $(".tab-sub-item").removeClass("current-h3"), $("#" + e).addClass("current-h3")),
+    //                 $("html, body").animate({ scrollTop: $(this).offset().top - 70 }, "slow"),
+    //                 !1
+    //             );
+    //         }),
+    //         $(".dropdown button").click(function () {
+    //             $(this).children().toggleClass("rotated");
+    //         }),
+    //         (window.onclick = function (e) {
+    //             if (!e.target.matches(".title")) {
+    //                 var t,
+    //                     i = document.getElementsByClassName("tab-sub-item");
+    //                 for (t = 0; t < i.length; t++) {
+    //                     var s = i[t];
+    //                     s.classList.contains("current") && (s.classList.remove("current"), $(".title").removeClass("active"));
+    //                 }
+    //             }
+    //         }),
+    //         $("ul.tabs li").click(function () {
+    //             var e = $(this).attr("data-tab");
+    //             $("ul.tabs li").removeClass("active"), $(".tab-content-item").removeClass("current"), $(this).addClass("active"), $("#" + e).addClass("current");
+    //         }),
+    //         $("#list").click(function (e) {
+    //             e.preventDefault(), $(".prd").addClass("list-group-item");
+    //         }),
+    //         $("#grid").click(function (e) {
+    //             e.preventDefault(), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
+    //         }),
+    //         $(window).innerWidth() <= 767
+    //             ? ($("#list").click(function () {
+    //                   $(this).addClass("delete"), $(this).removeClass("active"), $("#grid").removeClass("delete"), $("#grid").addClass("active"), $(".prd").addClass("list-group-item"), $(".prd").removeClass("grid-group-item");
+    //               }),
+    //               $("#grid").click(function () {
+    //                   $(this).addClass("delete"), $(this).removeClass("active"), $("#list").removeClass("delete"), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
+    //               }),
+    //               $(window).innerWidth() <= 767 &&
+    //                   ($("#list1").click(function () {
+    //                       $(this).addClass("delete"), $(this).removeClass("active"), $("#grid1").removeClass("delete"), $("#grid1").addClass("active"), $(".prd").addClass("list-group-item"), $(".prd").removeClass("grid-group-item");
+    //                   }),
+    //                   $("#grid1").click(function () {
+    //                       $(this).addClass("delete"), $(this).removeClass("active"), $("#list1").removeClass("delete"), $(".prd").removeClass("list-group-item"), $(".prd").addClass("grid-group-item");
+    //                   }),
+    //                   void $(".wrapper-h").slick({ infinite: !0, autoplay: !0, dots: !0, speed: 2e3, slidesToShow: 2, slidesToScroll: 2 })))
+    //             : ($("body").css("overflow-x", "auto"), !1)
+    //     );
+    // }),
     $(document).ready(function () {
         $("#select-country").selectize();
     }),

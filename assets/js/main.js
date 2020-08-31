@@ -27,7 +27,7 @@
         });
 
 
-         $(".slide-product-1").owlCarousel({
+        $(".slide-product-1").owlCarousel({
             items: 4,
             loop: true,
             autoplay: true,
@@ -45,6 +45,34 @@
                 },
                 992: {
                     items: 5,
+                },
+                 
+            },
+        });
+
+        $(".slide-mn").owlCarousel({
+            items: 6,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 800,
+            speed: 3000,
+            center: true,
+            margin:15,
+            navText: ["<img src='././images/prev-silde-top.png'>","<img src='././images/next-slide-top.png'>"],
+            nav:true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 4,
+                },
+                480: {
+                    items: 4,
+                },
+                992: {
+                    items: 5,
+                },
+                 1200: {
+                    items: 6,
                 },
                  
             },
