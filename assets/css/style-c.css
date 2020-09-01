@@ -843,7 +843,7 @@ main .ss-view-body .btn-main .btn-bp a:hover {
 }
 main .ss-view-body .btn-main .btn-bp a svg {
     position: relative;
-    right: -100px;
+    right: -125px;
     top: -30px;
     font-size: 35px;
     color: #fff;
@@ -5428,4 +5428,12 @@ main .ss-chuyende-news .news-left ul.pagination {
 .form-desc .cs-up-button.button-sec{
     color: #065AC0;
 
+}
+.btn-bp a svg {
+    position: relative;
+    right: -106px;
+    top: -30px;
+    font-size: 35px;
+    color: #fff;
+    display: none;
 }

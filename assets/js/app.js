@@ -16431,7 +16431,7 @@ function dropdown() {
             }),
             $(".ss-view-body h2 span").click(function () {
                 $(".btn-main .xoa").removeClass("delete"), $(".btn-bp").removeClass("wrapping"), $(".btn-main").removeClass("them"), $(".btn-bp .nut-btn ").removeClass("active1 active"), $(".body-content").hide(), $(this).hide();
-            });
+            });s
         var e = $(".selected"),
             t = $(".dropdown-list"),
             i = $(".dropdown-list li");
@@ -16465,33 +16465,33 @@ function dropdown() {
             $(".pagination li a").click(function () {
                 $("a").removeClass("active"), $(this).addClass("active");
             }),
-            $(".c-dropdown__list li").click(function () {
-                $(".c-dropdown__item").removeClass("active"), $(this).addClass("active");
-                var e = $(".c-dropdown__item.active").attr("data-dropdown-value"),
-                    t = $("#global-search");
-                switch (e) {
-                    case "thuoc":
-                        t.attr("placeholder", "Tìm kiếm thuốc...");
-                        break;
-                    case "thucphamchucnang":
-                        t.attr("placeholder", "Tìm kiếm thực phẩm chức năng...");
-                        break;
-                    case "thongtinbenhly":
-                        t.attr("placeholder", "Tìm kiếm thông tin bệnh lý...");
-                        break;
-                    case "gocsuckhoe":
-                        t.attr("placeholder", "Tìm kiếm góc sức khỏe...");
-                        break;
-                    case "duocmypham":
-                        t.attr("placeholder", "Tìm kiếm dược mỹ phẩm...");
-                        break;
-                    case "chamsoccanhan":
-                        t.attr("placeholder", "Tìm kiếm chăm sóc cá nhân...");
-                        break;
-                    default:
-                        t.attr("placeholder", "Tìm thuốc, thực phẩm chức năng, bệnh lý, mỹ phẩm...");
-                }
-            }),
+            // $(".c-dropdown__list li").click(function () {
+            //     $(".c-dropdown__item").removeClass("active"), $(this).addClass("active");
+            //     var e = $(".c-dropdown__item.active").attr("data-dropdown-value"),
+            //         t = $("#global-search");
+            //     switch (e) {
+            //         case "thuoc":
+            //             t.attr("placeholder", "Tìm kiếm thuốc...");
+            //             break;
+            //         case "thucphamchucnang":
+            //             t.attr("placeholder", "Tìm kiếm thực phẩm chức năng...");
+            //             break;
+            //         case "thongtinbenhly":
+            //             t.attr("placeholder", "Tìm kiếm thông tin bệnh lý...");
+            //             break;
+            //         case "gocsuckhoe":
+            //             t.attr("placeholder", "Tìm kiếm góc sức khỏe...");
+            //             break;
+            //         case "duocmypham":
+            //             t.attr("placeholder", "Tìm kiếm dược mỹ phẩm...");
+            //             break;
+            //         case "chamsoccanhan":
+            //             t.attr("placeholder", "Tìm kiếm chăm sóc cá nhân...");
+            //             break;
+            //         default:
+            //             t.attr("placeholder", "Tìm thuốc, thực phẩm chức năng, bệnh lý, mỹ phẩm...");
+            //     }
+            // }),
             $(".ss-group-benh .tab2 .title").click(function () {
                 var e = $(this).attr("data-tab");
                 $("#" + e)
@@ -16502,7 +16502,10 @@ function dropdown() {
                     $(this).addClass("active"),
                     $(".tab-sub-item").removeClass("current current-h3"),
                     $("#" + e).toggleClass("current"),
-                    $(".ss-group-benh .tab2 .title h3").click && ($(this).addClass("active-h3"), $("h3").css("color", "#414141"), $(".tab-sub-item").removeClass("current-h3"), $("#" + e).addClass("current-h3")),
+                    $(".ss-group-benh .tab2 .title h3").click && ($(this).addClass("active-h3"),
+                    $("h3").css("color", "#414141"),
+                    $(".tab-sub-item").removeClass("current-h3"),
+                    $("#" + e).addClass("current-h3")),
                     $("html, body").animate({ scrollTop: $(this).offset().top - 70 }, "slow"),
                     !1
                 );
@@ -16548,29 +16551,29 @@ function dropdown() {
                 : ($("body").css("overflow-x", "auto"), !1)
         );
     }),
-    $(document).ready(function () {
-        $("#select-country").selectize();
-    }),
-    $(document).ready(function () {
-        $(".list-item .more a").click(function () {
-            $(".list-item ul").removeClass("compact"), $(".list-item ul").addClass("remove-border"), $(".list-item ul li:nth-child(4)").css("border-bottom", "1px solid #ddd"), $(this).parent().hide();
-        }),
-            $('input[type="radio"]').click(function () {
-                "radio-1" == $(this).attr("id") && ($(".address").show(), $(".home").hide());
-            }),
-            $('input[type="radio"]').click(function () {
-                "radio-2" == $(this).attr("id") && ($(".address").hide(), $(".home").show());
-            }),
-            $('input[type="radio"]').click(function () {
-                "radio-3" == $(this).attr("id") && $(".wrapper").hide();
-            }),
-            $('input[type="radio"]').click(function () {
-                "radio-4" == $(this).attr("id") && $(".wrapper").show();
-            }),
-            $("#overlay-full").click(function () {
-                $("#mySidebar").hide(), $("#show").show(), $(this).hide(), $("html").removeClass("scroll-no");
-            });
-    }),
+    // $(document).ready(function () {
+    //     $("#select-country").selectize();
+    // }),
+    // $(document).ready(function () {
+    //     $(".list-item .more a").click(function () {
+    //         $(".list-item ul").removeClass("compact"), $(".list-item ul").addClass("remove-border"), $(".list-item ul li:nth-child(4)").css("border-bottom", "1px solid #ddd"), $(this).parent().hide();
+    //     }),
+    //         $('input[type="radio"]').click(function () {
+    //             "radio-1" == $(this).attr("id") && ($(".address").show(), $(".home").hide());
+    //         }),
+    //         $('input[type="radio"]').click(function () {
+    //             "radio-2" == $(this).attr("id") && ($(".address").hide(), $(".home").show());
+    //         }),
+    //         $('input[type="radio"]').click(function () {
+    //             "radio-3" == $(this).attr("id") && $(".wrapper").hide();
+    //         }),
+    //         $('input[type="radio"]').click(function () {
+    //             "radio-4" == $(this).attr("id") && $(".wrapper").show();
+    //         }),
+    //         $("#overlay-full").click(function () {
+    //             $("#mySidebar").hide(), $("#show").show(), $(this).hide(), $("html").removeClass("scroll-no");
+    //         });
+    // }),
     (function (e, t, i, s) {
         "use strict";
         var c = e("html");
