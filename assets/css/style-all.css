@@ -1,14 +1,14 @@
-@import url(assets/css/animate.css);
-@import url(assets/css/owl.carousel.min.css);
-@import url(assets/css/plugin.css);
-@import url(assets/css/style.css);
-@import url(assets/css/style-c.css);
-@import url(assets/css/responsive.css);
-@import url(assets/css/hotline.css);
+@import url(animate.css);
+@import url(owl.carousel.min.css);
+@import url(plugin.css);
+@import url(style.css);
+@import url(style-c.css);
+@import url(responsive.css);
+@import url(hotline.css);
 
 @font-face {
    font-family: 'arial';
-   src: url(fonts/arial.ttf);
+   src: url(../../fonts/arial.ttf);
 }
 body {
    font-size: 14px;
@@ -207,9 +207,9 @@ body {
 }
 @font-face {
     font-family: "icon";
-    src: url(assets/fonts/icon2a0c.eot);
-    src: url(assets/fonts/icon2a0c.eot) format("embedded-opentype"), url(assets/fonts/icon2a0c.woff2) format("woff2"), url(assets/fonts/icon2a0c.woff) format("woff"),
-        url(assets/fonts/icon2a0c.ttf) format("truetype"), url(assets/fonts/icon2a0c.svg) format("svg");
+    src: url(../fonts/icon2a0c.eot);
+    src: url(../fonts/icon2a0c.eot) format("embedded-opentype"), url(../fonts/icon2a0c.woff2) format("woff2"), url(../fonts/icon2a0c.woff) format("woff"),
+        url(../fonts/icon2a0c.ttf) format("truetype"), url(../fonts/icon2a0c.svg) format("svg");
     font-weight: 400;
     font-style: normal;
 }
