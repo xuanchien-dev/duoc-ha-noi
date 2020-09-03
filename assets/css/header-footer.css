@@ -3,6 +3,7 @@
 .lch-search .form-control{
     position: relative;
     display: block;
+    border-left: 1px solid;
 }
 .lch-search .form-control:before {
     content: "";
@@ -1326,7 +1327,6 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url(../../images/bg-top1.png);
-    z-index: 0;
 }
 .lc-header-inner {
     display: -webkit-box;
@@ -1335,8 +1335,6 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 1;
-    position: relative;
 }
 .lch-hotline,
 .lch-logo {
