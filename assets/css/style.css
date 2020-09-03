@@ -1072,6 +1072,9 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+    border: none;
+    outline: none;
+    color: #343434;
 }
 
 figure {

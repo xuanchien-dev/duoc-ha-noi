@@ -1,6 +1,30 @@
 
 /*menu-mobile*/
-
+.lch-search .form-control{
+    position: relative;
+    display: block;
+}
+.lch-search .form-control:before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/line.png);
+    left: -10px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+}
+.lch-hotline{
+    display: flex;
+}
+.text-hl{
+    margin-left: 30px;
+    color: #fff;
+    font-size: 16px !important;
+}
+.text-hl span a{
+    font-weight: bold;
+    font-size: 18px;
+}
 .item-btn-js {
     display: flex;
     justify-content: space-between;
